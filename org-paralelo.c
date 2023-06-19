@@ -127,9 +127,9 @@ int main()
         //transformação 1
 
         imagem *T = alocaimg(img->altura, img->largura);
-        if (img == NULL) 
+        if (T == NULL) 
         {
-            printf("erro1");
+            printf("erro ao alocar T");
             return 0;
         }
 
@@ -164,9 +164,9 @@ int main()
         //transformação 2
 
         imagem *TDE = alocaimg(img->altura, img->largura);
-        if (img == NULL) 
+        if (TDE == NULL) 
         {
-            printf("erro2");
+            printf("erro ao alocar TDE");
             return 0;
         }
 
