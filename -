@@ -1,0 +1,36 @@
+
+# Curve 0 of 6, 6 points
+# Curve title: "dados using 0:(sequencial1 = $2, 0)"
+# x y type
+ 0  0  i
+ 1  0  i
+ 2  0  i
+ 3  0  i
+ 4  0  i
+ 5  0  i
+
+
+# Curve 1 of 6, 0 points
+# Curve title: "dados using 0:(paralelo1 = $3, 0)"
+# x y type
+
+
+# Curve 2 of 6, 0 points
+# Curve title: "dados using 0:(sequencial2 = $4, 0)"
+# x y type
+
+
+# Curve 3 of 6, 0 points
+# Curve title: "dados using 0:(paralelo2 = $5, 0)"
+# x y type
+
+
+# Curve 4 of 6, 0 points
+# Curve title: "dados using 0:(sequencial3 = $6, 0)"
+# x y type
+
+
+# Curve 5 of 6, 0 points
+# Curve title: "dados using 0:(paralelo3 = $7, 0)"
+# x y type
+

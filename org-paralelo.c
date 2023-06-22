@@ -51,7 +51,7 @@ imagem* le_img(const char* filename) {
 
 imagem* alocaimg(int altura, int largura)
 {
-    imagem* img = malloc(sizeof(img));
+    imagem* img = malloc(sizeof(imagem));
     if(img == NULL)
         return NULL;
     img->largura = largura;
@@ -121,8 +121,6 @@ int main()
         if (img != NULL) 
             imprimeimagem(img);
 
-        //CODIGO
-        int x = img->altura, y = img->largura, i;
 
         //transformação 1
 
@@ -132,6 +130,8 @@ int main()
             printf("erro ao alocar T");
             return 0;
         }
+
+        int x, y, i;
 
         #pragma omp parallel for private(x, y, i) shared(img, T)
         for(x=0 ; x<img->altura ; x++)
@@ -155,11 +155,9 @@ int main()
             }
         }
 
-        #pragma omp section
-        {
             printf("matriz T: \n"); 
             imprimeimagem(T);
-        }
+
 
         //transformação 2
 
@@ -194,11 +192,8 @@ int main()
             }
         }
 
-        #pragma omp section
-        {
             printf("matriz TDE: \n");
             imprimeimagem(TDE);
-        }
 
         gettimeofday(&tempo_fim,NULL);
         tf = (double)tempo_fim.tv_usec + ((double)tempo_fim.tv_sec * (1000000.0));

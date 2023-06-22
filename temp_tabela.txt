@@ -1,0 +1,7 @@
+img1-sequencial	47.762
+img1-paralelo	42.209
+img2-sequencial	523.087
+img2-paralelo	294.436
+img3-sequencial	1552.015
+img3-paralelo	721.001
+
